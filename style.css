@@ -74,6 +74,14 @@ aside.show {
 .cart--area h1 {
     display: relative;
 }
+.cart--area-payment {
+    margin-top: 30px; /* ajuste */
+    padding:20px;
+}
+
+.cart--area-payment h1 {
+    display: relative;
+}
 
 main {
     flex:1;
@@ -398,6 +406,114 @@ h1, h2 {
 .cart--finalizar:hover {
     background-color:#35af4a;
 }
+.cart--finalizarCompra {
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    cursor:pointer;
+    text-align:center;
+    margin-top:180px;
+    border:2px solid #63f77c;
+    transition: all ease .2s;
+}
+
+.cart--finalizarCompra:hover {
+    background-color:#35af4a;
+}
+
+.cart--credito{
+    padding:30px 30px;
+    border-radius:20px;
+    margin: 20px 60px;
+    background-color:#CCC;
+    cursor:pointer;
+    text-align:center;
+    margin-top:30px;
+    border:2px solid #999;
+    transition: all ease .2s;
+}
+.cart--debito{
+    padding:30px 30px;
+    border-radius:20px;
+    margin: 20px 60px;
+    background-color:#CCC;
+    cursor:pointer;
+    text-align:center;
+    margin-top:30px;
+    border:2px solid #999;
+    transition: all ease .2s;
+}
+.cart--pix{
+    padding:30px 30px;
+    border-radius:20px;
+    margin: 20px 60px;
+    background-color:#CCC;
+    cursor:pointer;
+    text-align:center;
+    margin-top:30px;
+    border:2px solid #999;
+    transition: all ease .2s;
+}
+.selecionado {
+    display: none;
+  }
+  
+  .selecionado.show {
+    display: block;
+  }
+
+  .window {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+
+.windowBody {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+}
+
+.sucesfull {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sucessfull--back {
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color:#000;
+}
+
+.sucesfull img {
+    height:400px;
+    width:auto;
+}
+
+.Info {
+    flex:1;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    padding-bottom:50px;
+}
+
+.Info h1 {
+    margin-top:50px;
+}
 
 @media (max-width:1000px) {
     .pizza-area {
@@ -435,9 +551,8 @@ h1, h2 {
     aside.show {
         width:auto;
     }
-    .cart--area {
-        width:100vw;
-    }
+  
+    
 
     .menu-closer {
         display:block;

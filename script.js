@@ -271,14 +271,45 @@ const atualizarCarrinho = () => {
 	}
 }
 
-const finalizarCompra = () => {
+
+const formasDePagamento = () => {
     seleciona('.cart--finalizar').addEventListener('click', () => {
-        console.log('Finalizar compra')
+        seleciona('aside.payment').classList.add('show')
         seleciona('aside').classList.remove('show')
-        seleciona('aside').style.left = '100vw'
         seleciona('header').style.display = 'flex'
+        
+        
     })
 }
+
+
+
+const finalizarCompra = () => {
+    seleciona('.cart--finalizarCompra').addEventListener('click', () => {
+        console.log('Finalizar compra')
+        seleciona('aside.payment').classList.remove('show')
+        seleciona('aside.payment').style.left = '100vw'
+        seleciona('header').style.display = 'flex'
+       
+        seleciona('.window').style.display = 'flex';
+    })
+}
+
+const fecharJanela = () => {
+    const cancelMobileButton = document.querySelector('.cancelMobileButton');
+    const windowElement = document.querySelector('.window');
+  
+    cancelMobileButton.addEventListener('click', () => {
+      windowElement.style.display = 'none';
+    });
+  };
+  
+  fecharJanela();
+  
+
+  
+
+
 
 
 // MAPEAR pizzaJson para gerar lista de pizzas
@@ -325,4 +356,11 @@ mudarQuantidade()
 adicionarNoCarrinho()
 atualizarCarrinho()
 fecharCarrinho()
+formasDePagamento()
 finalizarCompra()
+pagamento()
+forma()
+fecharJanela()
+
+
+
