@@ -51,7 +51,6 @@ const preencheDadosModal = (item) => {
     seleciona('.pizzaInfo--actualPrice').innerHTML = formatoReal(item.price[2])
 }
 
-// aula 05
 const pegarKey = (e) => {
     // .closest retorna o elemento mais proximo que tem a class que passamos
     // do .pizza-item ele vai pegar o valor do atributo data-key
@@ -296,20 +295,20 @@ const finalizarCompra = () => {
 }
 
 const fecharJanela = () => {
-    const cancelMobileButton = document.querySelector('.cancelMobileButton');
+    const cancelButton = document.querySelector('.cancelButton');
     const windowElement = document.querySelector('.window');
   
-    cancelMobileButton.addEventListener('click', () => {
+    cancelButton.addEventListener('click', () => {
       windowElement.style.display = 'none';
+      location.reload();
     });
-  };
-  
-  fecharJanela();
-  
-
-  
+};
+ 
 
 
+  
+
+fecharJanela();
 
 
 // MAPEAR pizzaJson para gerar lista de pizzas
@@ -360,7 +359,7 @@ formasDePagamento()
 finalizarCompra()
 pagamento()
 forma()
-fecharJanela()
+
 
 
 
