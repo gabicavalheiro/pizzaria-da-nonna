@@ -294,6 +294,39 @@ const finalizarCompra = () => {
     })
 }
 
+
+
+const forma = () => {
+    seleciona('.cart--credito').addEventListener('click' , () =>{
+        seleciona('.selecionado-1').style.display = 'block'
+        seleciona('.selecionado-2').style.display = 'none'
+        seleciona('.selecionado-3').style.display = 'none'
+    })
+}
+  forma()
+
+  const forma2 = () => {
+    seleciona('.cart--debito').addEventListener('click' , () =>{
+        seleciona('.selecionado-2').style.display = 'block'
+        seleciona('.selecionado-1').style.display = 'none'
+        seleciona('.selecionado-3').style.display = 'none'
+    })
+}
+  forma2()
+
+  const forma3 = () => {
+    seleciona('.cart--pix').addEventListener('click' , () =>{
+        seleciona('.selecionado-3').style.display = 'block'
+        seleciona('.selecionado-2').style.display = 'none'
+        seleciona('.selecionado-1').style.display = 'none'
+    })
+}
+  forma3()
+
+
+
+  
+
 const fecharJanela = () => {
     const cancelButton = document.querySelector('.cancelButton');
     const windowElement = document.querySelector('.window');
@@ -304,10 +337,6 @@ const fecharJanela = () => {
     });
 };
  
-
-
-  
-
 fecharJanela();
 
 
@@ -358,7 +387,7 @@ fecharCarrinho()
 formasDePagamento()
 finalizarCompra()
 pagamento()
-forma()
+
 
 
 

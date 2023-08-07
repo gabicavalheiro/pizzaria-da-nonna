@@ -413,7 +413,7 @@ h1, h2 {
     color:#FFF;
     cursor:pointer;
     text-align:center;
-    margin-top:180px;
+    margin-top:140px;
     border:2px solid #63f77c;
     transition: all ease .2s;
 }
@@ -455,12 +455,32 @@ h1, h2 {
     border:2px solid #999;
     transition: all ease .2s;
 }
-.selecionado {
+.selecionado-1 {
     display: none;
+   
   }
   
-  .selecionado.show {
+  .selecionado-1.show {
     display: block;
+    margin-top: 20px;
+  }
+.selecionado-2 {
+    display: none;
+   
+  }
+  
+  .selecionado-2.show {
+    display: block;
+    margin-top: 20px;
+  }
+.selecionado-3 {
+    display: none;
+   
+  }
+  
+  .selecionado-3.show {
+    display: block;
+    margin-top: 20px;
   }
 
   .window {
